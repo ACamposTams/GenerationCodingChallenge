@@ -50,7 +50,6 @@ class YourComponent extends Component {
   //Trigger for Marker Clicks, save marker to favorites or remove from favorites if found
   onMarkerClick(props, marker, e) {
     if (this.state.favorites.includes(marker)) {
-      var index = this.state.favorites.indexOf(marker)
       this.setState({ favorites: this.state.favorites.filter(favorite => favorite != marker)})
       marker.setIcon('https://www.google.com/mapfiles/marker.png')
     } else {
