@@ -5,10 +5,11 @@ Generation Take-Home Coding Challenge
 Clone the repo or decompress de zip file
 
 Run
-
+```
 npm install
 npm start
-the exercise will open on http://localhost:3000
+```
+The exercise will open on http://localhost:3000
 
 ## What does the exercise do?
 Once the page is loaded all the stores will show on the map on the left side. An empty list of favorites will be on the right.
