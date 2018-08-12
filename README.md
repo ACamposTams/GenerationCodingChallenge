@@ -17,6 +17,8 @@ To select a store as a favorite simply click the marker.
 
 To remove the store from the favorites click the marker again.
 
+The markers in the map will change to green if selected to the list.
+
 ## Libraries used:
 
 google-maps-react for the use of the google maps API which displays the map and the markers

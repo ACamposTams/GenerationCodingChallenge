@@ -30,6 +30,7 @@ class YourComponent extends Component {
               position = {{lat: lat, lng: lng}}
               title = {address}
               name = { name }
+              icon = {{url: 'https://www.google.com/mapfiles/marker.png'}}
             />
     this.setState({ markers: this.state.markers.concat([marker]) })
   }
@@ -51,8 +52,10 @@ class YourComponent extends Component {
     if (this.state.favorites.includes(marker)) {
       var index = this.state.favorites.indexOf(marker)
       this.setState({ favorites: this.state.favorites.filter(favorite => favorite != marker)})
+      marker.setIcon('https://www.google.com/mapfiles/marker.png')
     } else {
       this.setState({ favorites: this.state.favorites.concat([marker]) })
+      marker.setIcon('https://www.google.com/mapfiles/marker_green.png')
     }
   }
 
